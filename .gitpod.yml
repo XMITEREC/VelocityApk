@@ -1,0 +1,7 @@
+image:
+  file: Dockerfile
+
+# We define tasks to run once the container is built
+tasks:
+  - name: Build Debug APK
+    command: ./gradlew :app:assembleDebug
